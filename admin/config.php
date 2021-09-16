@@ -50,10 +50,5 @@ $allowed_types = [
     'application/mspowerpoint',
     'application/powerpoint'
 ];
-function logger($type,$content,$db){
-    $db->insert('log',['type'=>$type,'content'=>$content]);
-}
-include 'controller/getclient.php'
-
 
 ?>

@@ -22,7 +22,7 @@ $files = array_diff(scandir(FILES_DIR.$client['dirname'],SCANDIR_SORT_DESCENDING
                                 <form class="print-form" id="print_form_<?=$i?>" action="index.php" method="post">
                                     <input type="hidden" name="filename" value="<?=$file?>">
                                     <input type="hidden" name="q" value="print">
-                                    <button data-id="<?=$i?>" type="button" onclick="setdoc(this)"  data-toggle="modal" href="#printme" class="btn btn-primary">Print</button> 
+                                    <button data-id="<?=$i?>" type="button" onclick="setdoc(this,'<?=$file?>')"  data-toggle="modal" href="#printme" class="btn btn-primary">Print</button> 
                                 </form>                             
                             </td>
                             <td class="text-left">

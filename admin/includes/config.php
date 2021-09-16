@@ -1,9 +1,4 @@
 <?php
-/*
-* Use the lpstat command to see a list of available printers:
-* `lpstat -p -d`
-*/
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -14,7 +9,6 @@ define("PRINTER", 'EPSON_L120_Series');
 define("FILES_DIR", __DIR__.'/files/');
 define("ROOT", __DIR__.'/');
 define("THUMBNAILS_DIR", __DIR__.'/thumbnails/');
-
 
 include 'db.php';
 // make a connection to mysql here
@@ -50,10 +44,6 @@ $allowed_types = [
     'application/mspowerpoint',
     'application/powerpoint'
 ];
-function logger($type,$content,$db){
-    $db->insert('log',['type'=>$type,'content'=>$content]);
-}
-include 'controller/getclient.php'
 
 
 ?>

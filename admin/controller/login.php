@@ -1,6 +1,7 @@
 <?php
 
 include '../helper/config.php';
+print_r($_POST);die();
 if(isset($_POST['login']))
 	{
 		$username=$_POST['username'];
