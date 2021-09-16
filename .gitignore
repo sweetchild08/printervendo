@@ -1,3 +1,5 @@
 raspAP/
 pma/
 *.html
+thumbnails/*
+files/*
