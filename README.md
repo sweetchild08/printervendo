@@ -55,7 +55,7 @@ sudo service cups restart
 Next we add the Pi user to the Ipadmin group. This gives the Raspberry Pi the ability to perform administrative functions of CUPS without necessarily being a super user.
 
 ```
-sudo usermod -a -G Ipadmin pi
+sudo usermod -a -G lpadmin pi
 ```
 
 Next we need to ensure that CUPS can be connected to on the home network and its also accessible across the entire network.
