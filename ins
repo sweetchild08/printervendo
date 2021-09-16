@@ -1,0 +1,17 @@
+install git
+install apache2
+install mysql/mariadb
+
+git clone https://github.com/sweetchild08/printervendo.git
+
+
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/printervendo.conf
+sudo nano /etc/apache2/sites-available/printervendo.conf
+
+replace this
+    DocumentRoot /var/www/html
+with this
+    DocumentRoot /var/www/html/printervendo
+then save
+
+setup database
