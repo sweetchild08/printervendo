@@ -63,7 +63,7 @@ Next we need to ensure that CUPS can be connected to on the home network and its
 To get it to allow all connections on the network, run;
 
 ```
-sudo cupsctl –remote-any
+sudo cupsctl --remote-any
 ```
 After this we then restart cups to effect changes using;
 ```
